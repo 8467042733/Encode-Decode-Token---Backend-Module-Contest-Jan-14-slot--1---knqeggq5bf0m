@@ -26,7 +26,7 @@ Output:
 status: 'Success'
 }
 */
-const encodePayload = async (req, res) => {
+const encodePayload = (req, res) => {
   try {
     //Write your code here
     const {name,email,role}=req.body;
