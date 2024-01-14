@@ -38,7 +38,7 @@ const encodePayload = async (req, res) => {
     const token=jwt.sign(payload,'newtonSchool');
     res.json({
       token,
-      status:'success',
+      status:'Success',
     });
   } catch (err) {
     console.error(err);
@@ -86,8 +86,6 @@ const decodeToken = (req, res) => {
     res.json({
       payload:decodePayload,
       status:'Success',
-
-
     });
   } catch (err) {
     console.error(err);
